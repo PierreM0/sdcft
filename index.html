@@ -1,0 +1,35 @@
+<!DOCTYPE html UTF-8>
+<html>
+  <head>
+    <link rel="stylesheet" href="globalcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="main">
+    <div style="display: flex;justify-content: center;height: 5%;margin-bottom: 5%;">
+      <h3 style="font-family: 'Open Sans', sans-serif; color: #efeff1;">Choisissez les deux streamer que vous voulez regarder: </h3>
+    </div>
+      <div class="flex-container-welcome">
+        <input type="text" id="streamer1" value="">
+        <input type="text" id="streamer2" value="">
+      </div>
+      <div style="display: flex;justify-content: right;height: 5%;">
+          <button 
+            class='button' 
+            onclick="myFunction()"
+            > OK </button>
+        </div> 
+      </div>
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("streamer1").value;
+        var y = document.getElementById("streamer2").value;
+        window.location.href = 'https://pierrem0.ddns.net/streams.html?' + x.toLowerCase() + ',' + y.toLowerCase();
+      }
+      </script>
+
+  </body>
+</html>
