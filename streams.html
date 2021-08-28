@@ -73,9 +73,12 @@
     document.getElementById('videoStramer2').setAttribute('src',srcVideo);
     document.getElementById('chatStramer2').setAttribute('src',srcChat);
   }
-
-  setFirstStreamer()
-  setSecondStreamer()
+window.onload = function setingStreamers() {
+            setFirstStreamer();
+            console.log('First streamer set.');
+            setSecondStreamer();
+            console.log('Second streamer set.');
+        }
 
 </script>
 
