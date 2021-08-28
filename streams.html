@@ -53,14 +53,14 @@
 
   function getStreamerArr() {
     var url = window.location.href;
-    var datafromurl = url.slice(71);
+    var datafromurl = url.slice(46); //change this value with your the number of character in your url before the 2 streamers names
     const myArr = datafromurl.split(',');
     return myArr
   }
 
   function setFirstStreamer() {
     var streamerName = getStreamerArr()[0];
-    var srcVideo = 'https://player.twitch.tv/?channel=' + streamerName + '&parent=pierrem0.github.io';
+    var srcVideo = 'https://player.twitch.tv/?channel=' + streamerName + '&parent=pierrem0.github.io'; //change the parents value with your domain name
     var srcChat = 'https://www.twitch.tv/embed/' + streamerName + '/chat?parent=pierrem0.github.io&darkpopout';
     document.getElementById('videoStramer1').setAttribute('src',srcVideo);
     document.getElementById('chatStramer1').setAttribute('src',srcChat);
