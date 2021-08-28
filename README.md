@@ -1,0 +1,1 @@
+Simple dual cast for twitch is a webpage writen in HTML, CSS and Javasript. It allow you to watch two streams in the same time and you can use it at https://pierrem0.github.io/sdcft/. If you want to host it, you don't need a server it is all client side.
